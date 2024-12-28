@@ -1,6 +1,6 @@
 [package]
 name = "http-cli"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2024"
 license = "GPL-2.0"
 readme = "README.md"
