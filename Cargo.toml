@@ -7,5 +7,6 @@ edition = "2024"
 anyhow = "1.0.95"
 htmd = "0.1.6"
 http = "1.2.0"
+reqwest = "0.12.11"
 scraper = "0.22.0"
 tokio = { version = "1.42.0", features = ["full"] }
