@@ -521,7 +521,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "http-status"
+name = "http-cli"
 version = "1.0.0"
 dependencies = [
  "anyhow",
