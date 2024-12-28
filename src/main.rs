@@ -5,6 +5,7 @@ pub mod html_to_markdown;
 pub mod render_markdown;
 
 use anyhow::Result;
+use clap::Parser;
 
 use extract_information::*;
 use get_brief::*;
@@ -26,6 +27,23 @@ fn print_brief(status_code: u16) -> Result<()> {
     Ok(())
 }
 
-fn main() {
-    println!("Hello, world!");
+#[derive(Parser, Debug)]
+#[command(version, about, long_about = None)]
+struct Args {
+    #[arg()]
+    status_code: u16,
+
+    #[arg(short, long, default_value_t = false)]
+    brief: bool,
+}
+
+#[tokio::main]
+async fn main() -> Result<()> {
+    let args = Args::parse();
+
+    if args.brief {
+        print_brief(args.status_code)
+    } else {
+        print_full(args.status_code).await
+    }
 }
