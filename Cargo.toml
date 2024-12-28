@@ -2,6 +2,13 @@
 name = "http-status"
 version = "0.1.0"
 edition = "2024"
+license = "GPL-2.0"
+readme = "README.md"
+repository = "https://github.com/akagiyuu/http-status"
+homepage = "https://github.com/akagiyuu/http-status"
+description = """
+A CLI to fetch HTTP status infomation 
+"""
 
 [dependencies]
 anyhow = "1.0.95"
