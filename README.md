@@ -2,6 +2,10 @@
 
 A CLI to get description about a HTTP status code
 
+## Requirements
+
+- [Glow](https://github.com/charmbracelet/glow)
+
 ## Installation
 
 ```bash
