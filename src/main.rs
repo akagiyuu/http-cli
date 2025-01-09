@@ -22,7 +22,7 @@ async fn print_full(status_code: u16) -> Result<()> {
 
 fn print_brief(status_code: u16) -> Result<()> {
     let brief = get_brief(status_code)?;
-    println!("{}", brief);
+    println!("Brief: {}", brief);
 
     Ok(())
 }
